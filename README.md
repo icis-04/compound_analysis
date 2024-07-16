@@ -15,5 +15,5 @@ The `abi.encodePacked` is the method of scrutiny.
 The function `SushiToken::delegateBySig` allows users to securely delegate voting and other rights using off-chain 
 signatures. `abi.encodePacked` helps the function to pack data recieved from the `abi.encode` functions - used earlier in 
 the `SushiToken::delegateBySig` function -  tightly without padding, which is a format required for some specific cryptographic
-operations used for recovering the signer address from the signature. This helps the SushiSwap Protocol as all SushiToken holders have a secure and convenient way to delegate their voting rights to another account without interacting with the contract or revealing their **private key** as the hash gotten from the **Encoding** serves as a signature to carry out the transaction.
+operations used for recovering the signer address from the signature. This helps the SushiSwap Protocol as all SushiToken holders have a secure and convenient way to delegate their voting rights to another account without interacting with the contract or revealing their **private key** as the hash gotten from the **Encoding** functions serves as a signature to carry out the transaction.
 
